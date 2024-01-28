@@ -1,14 +1,11 @@
-from pyshadow.main import Shadow
 from selenium.webdriver.support import expected_conditions as EC
 
-from selenium.common import NoAlertPresentException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
 from browser import Browser
 from time import sleep
 import logging
-
 
 
 class My_wireframe(Browser):
@@ -22,7 +19,6 @@ class My_wireframe(Browser):
             logging.info("The offer is visible")
         except Exception as i:
             logging.error(f"An error occurred while checking the offer visibility : {str(i)}")
-
 
     def close_the_offer(self):
         try:

@@ -4,7 +4,6 @@ from selenium.webdriver.chrome.service import Service
 import logging
 
 
-
 class Browser:
     s = Service(ChromeDriverManager().install())
     chrome = webdriver.Chrome(service=s)
